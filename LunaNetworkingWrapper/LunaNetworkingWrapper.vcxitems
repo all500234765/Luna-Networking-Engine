@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{4ae42fc8-180d-4443-975a-4ecb3338feaf}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)LNW\Buffer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)LNW\Debug.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)LNW\Socket.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)LNW\Buffer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)LNW\Client.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)LNW\Debug.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)LNW\Server.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)LNW\Socket.h" />
+  </ItemGroup>
+</Project>
